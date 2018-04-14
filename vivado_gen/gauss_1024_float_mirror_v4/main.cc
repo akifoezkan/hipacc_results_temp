@@ -244,7 +244,8 @@ hipaccReadMemory(_strmOut0, host_out, OUT);
                 << (float)host_out[y*width + x] << std::endl;
                 // Print Output
                 //printf("Hipacc Output \n"); displayFrame(host_out, 20, 10);
-                exit(EXIT_FAILURE);
+                //exit(EXIT_FAILURE);
+                y=height; break;
             }
         }
     }
