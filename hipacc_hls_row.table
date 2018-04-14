@@ -1,0 +1,28 @@
+\begin{table}[t]                                                    
+  \centering                                                        
+  \caption{Implementation results for Vivado HLS}                                                
+  \vspace{1ex}                                                      
+  \scalebox{.76}{                                                
+     \begin{tabular}{lrrrrrrr}                                   
+         \toprule                                                   
+& \multicolumn{6}{c}{vivado gen}\\ 
+\midrule
+App.                         &   BRAM &    SLICE &   LUT &    FF &  DSP &  SRL  &  Aclk & WorstcaseLatency\\
+\midrule
+gauss 1020 int nobh v1       &      8 &      386 &   672 &  1562 &   12 &    0  &  7.98 &   1044494\\
+gauss 1020 int nobh v16      &     60 &     4606 & 10417 & 12527 &  192 &  897  &  9.33 &     66439\\
+gauss 1020 int nobh v4       &     16 &     1317 &  2600 &  3839 &   48 &  129  &  8.45 &    261642\\
+gauss 1024 float mirror v1   &      8 &     3970 & 10641 &  9776 &  125 & 1870  &  8.95 &   1052811\\
+gauss 1024 float nobh v1     &      8 &     3862 &  8981 &  8978 &  125 & 1837  &  9.05 &   1052808\\
+gauss 1024 int clamp v1      &      8 &      671 &  1658 &  2277 &   12 &    1  &  7.88 &   1052686\\
+gauss 1024 int mirror v1     &      8 &      824 &  2200 &  2528 &   12 &   17  &  7.68 &   1052686\\
+gauss 1024 int mirror v16    &     60 &     7557 & 17495 & 23554 &  192 &    1  &  9.56 &     66701\\
+gauss 1024 int mirror v4     &     16 &     1745 &  3927 &  5793 &   48 &    1  &  8.51 &    263692\\
+gauss 1024 int nobh v1       &      8 &      466 &   697 &  1563 &   12 &    0  &  8.09 &   1052685\\
+gauss 1024 int nobh v16      &     60 &     4661 & 10624 & 12703 &  192 &  865  &  9.31 &     66699\\
+gauss 1024 int nobh v4       &     16 &     1234 &  2623 &  3902 &   48 &  129  &  8.79 &    263691\\
+         \bottomrule      
+     \end{tabular}      
+  }                   
+  \label{tab:results_hls}     
+\end{table}          
