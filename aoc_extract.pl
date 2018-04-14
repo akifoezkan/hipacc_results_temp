@@ -109,8 +109,8 @@ sub createJobs{
     my @joblist;
     foreach my $path_impl (@impl_files) {
         my ($filename, $basename) = fileparse($path_impl);
-        #my $app_name = fileparse(realpath($basename . ".."));
-        my $app_name = fileparse(realpath($basename . "../.."));
+        my $app_name = fileparse(realpath($basename . ".."));
+        #my $app_name = fileparse(realpath($basename . "../.."));
         my %job = (
             name      => "$app_name",
             path_impl => $path_impl,
@@ -142,7 +142,7 @@ my %tags_impl = (
 
 sub formatResult {
     my (@line) = @_;
-    my $return = sprintf("%-18s %6s %8s   %8s %7s %4s    %6s\n", @line);
+    my $return = sprintf("%-28s %6s %8s   %8s %7s %4s    %6s\n", @line);
     #print $return;
     $return
 }
@@ -153,7 +153,7 @@ sub formatStringforTexTable {
 }
 sub formatTexTableRow {
     my (@line) = @_;
-    my $return = sprintf("%-18s & %6s & %8s  &  %8s & %7s & %4s  &  %6s \\\\\n", @line);
+    my $return = sprintf("%-28s & %6s & %8s  &  %8s & %7s & %4s  &  %6s \\\\\n", @line);
     #print $return;
     formatStringforTexTable($return)
 }
@@ -344,9 +344,9 @@ sub printResultsInOneTable {
     print wrapTexTable(\%tex_table);
 }
 sub printHipacc {
-    my $path = $cwd . "/altera_gen";
+    my $path = $cwd;
     my @lines;
-    foreach my $keyword ("hipacc_altera") {
+    foreach my $keyword ("altera_gen") {
         my @results = getResultsInDir("$path/$keyword");
 
         my %tex_lines = (
