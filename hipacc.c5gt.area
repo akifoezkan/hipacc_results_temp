@@ -1,0 +1,26 @@
+\begin{table}[t]                                                    
+  \centering                                                        
+  \caption{Implementation results for Altera OpenCL}                                                
+  \vspace{1ex}                                                      
+  \scalebox{.76}{                                                
+     \begin{tabular}{lrrrrrr}                                   
+         \toprule                                                   
+& \multicolumn{6}{c}{altera gen}\\ 
+\midrule
+App.               &   M10K &      ALM  &      ALUT &      FF &  DSP  &    fMax \\
+\midrule
+gauss 1024 float mirror v1 &    351 &    37864  &     40686 &   74013 &   25  &   89.22 \\
+gauss 1024 float mirror v4 &    388 &    71497  &     88879 &  164114 &  100  &   92.75 \\
+gauss 1024 float nobh v1 &    349 &    37323  &     39911 &   71437 &   25  &   87.95 \\
+gauss 1024 float nobh v4 &    373 &    66857  &     93160 &  155614 &   90  &  103.63 \\
+gauss 1024 int mirror v1 &    340 &    27534  &     25976 &   45387 &    8  &   92.30 \\
+gauss 1024 int mirror v16 &    415 &    44338  &     48894 &   91269 &  128  &   93.81 \\
+gauss 1024 int mirror v4 &    340 &    27703  &     38293 &   53906 &   32  &  100.33 \\
+gauss 1024 int nobh v1 &    334 &    26547  &     24859 &   43816 &    8  &   97.89 \\
+gauss 1024 int nobh v16 &    412 &    38471  &     41584 &   82526 &  128  &   95.46 \\
+gauss 1024 int nobh v4 &    333 &    26478  &     37200 &   50684 &   32  &  105.45 \\
+         \bottomrule      
+     \end{tabular}      
+  }                   
+  \label{tab:results_aoc}     
+\end{table}          
