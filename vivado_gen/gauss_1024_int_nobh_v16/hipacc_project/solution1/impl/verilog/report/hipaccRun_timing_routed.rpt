@@ -1,0 +1,300 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sun Apr 15 00:30:36 2018
+| Host         : codesign89 running 64-bit Ubuntu 14.04.5 LTS
+| Command      : report_timing_summary -file ./report/hipaccRun_timing_routed.rpt
+| Design       : hipaccRun
+| Device       : 7z100-ffg900
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 516 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 517 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      0.470        0.000                      0                52477        0.051        0.000                      0                52477        2.550        0.000                       0                 19638  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock   Waveform(ns)         Period(ns)      Frequency(MHz)
+-----   ------------         ----------      --------------
+ap_clk  {0.000 3.330}        6.660           150.150         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+ap_clk              0.470        0.000                      0                52477        0.051        0.000                      0                52477        2.550        0.000                       0                 19638  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  ap_clk
+  To Clock:  ap_clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.470ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.051ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        2.550ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.470ns  (required time - arrival time)
+  Source:                 ccGaussianFilterGKer_U0/grp_processVECT_fu_18/colv_mid2_reg_6548_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@3.330ns period=6.660ns})
+  Destination:            ccGaussianFilterGKer_U0/grp_processVECT_fu_18/lineBuff_3_V_U/processVECT_lineBbkb_ram_U/ram_reg_5/ADDRARDADDR[8]
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@3.330ns period=6.660ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.660ns  (ap_clk rise@6.660ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.390ns  (logic 0.246ns (4.564%)  route 5.144ns (95.436%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.180ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.599ns = ( 8.259 - 6.660 ) 
+    Source Clock Delay      (SCD):    1.791ns
+    Clock Pessimism Removal (CPR):    0.012ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=19733, unset)        1.791     1.791    ccGaussianFilterGKer_U0/grp_processVECT_fu_18/ap_clk
+    SLICE_X70Y22         FDRE                                         r  ccGaussianFilterGKer_U0/grp_processVECT_fu_18/colv_mid2_reg_6548_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X70Y22         FDRE (Prop_fdre_C_Q)         0.246     2.037 r  ccGaussianFilterGKer_U0/grp_processVECT_fu_18/colv_mid2_reg_6548_reg[2]/Q
+                         net (fo=32, routed)          5.144     7.181    ccGaussianFilterGKer_U0/grp_processVECT_fu_18/lineBuff_3_V_U/processVECT_lineBbkb_ram_U/Q[2]
+    RAMB36_X2Y14         RAMB36E1                                     r  ccGaussianFilterGKer_U0/grp_processVECT_fu_18/lineBuff_3_V_U/processVECT_lineBbkb_ram_U/ram_reg_5/ADDRARDADDR[8]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     6.660     6.660 r  
+                                                      0.000     6.660 r  ap_clk (IN)
+                         net (fo=19733, unset)        1.599     8.259    ccGaussianFilterGKer_U0/grp_processVECT_fu_18/lineBuff_3_V_U/processVECT_lineBbkb_ram_U/ap_clk
+    RAMB36_X2Y14         RAMB36E1                                     r  ccGaussianFilterGKer_U0/grp_processVECT_fu_18/lineBuff_3_V_U/processVECT_lineBbkb_ram_U/ram_reg_5/CLKARDCLK
+                         clock pessimism              0.012     8.271    
+                         clock uncertainty           -0.035     8.235    
+    RAMB36_X2Y14         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[8])
+                                                     -0.584     7.651    ccGaussianFilterGKer_U0/grp_processVECT_fu_18/lineBuff_3_V_U/processVECT_lineBbkb_ram_U/ram_reg_5
+  -------------------------------------------------------------------
+                         required time                          7.651    
+                         arrival time                          -7.181    
+  -------------------------------------------------------------------
+                         slack                                  0.470    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.051ns  (arrival time - required time)
+  Source:                 ccGaussianFilterGKer_U0/grp_processVECT_fu_18/win_tmp_4_4_V_fu_148_reg[47]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@3.330ns period=6.660ns})
+  Destination:            ccGaussianFilterGKer_U0/grp_processVECT_fu_18/lineBuff_3_V_U/processVECT_lineBbkb_ram_U/ram_reg_0/DIBDI[15]
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@3.330ns period=6.660ns})
+  Path Group:             ap_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (ap_clk rise@0.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        0.241ns  (logic 0.091ns (37.738%)  route 0.150ns (62.262%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.072ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.023ns
+    Source Clock Delay      (SCD):    0.742ns
+    Clock Pessimism Removal (CPR):    0.209ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=19733, unset)        0.742     0.742    ccGaussianFilterGKer_U0/grp_processVECT_fu_18/ap_clk
+    SLICE_X24Y48         FDRE                                         r  ccGaussianFilterGKer_U0/grp_processVECT_fu_18/win_tmp_4_4_V_fu_148_reg[47]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X24Y48         FDRE (Prop_fdre_C_Q)         0.091     0.833 r  ccGaussianFilterGKer_U0/grp_processVECT_fu_18/win_tmp_4_4_V_fu_148_reg[47]/Q
+                         net (fo=2, routed)           0.150     0.983    ccGaussianFilterGKer_U0/grp_processVECT_fu_18/lineBuff_3_V_U/processVECT_lineBbkb_ram_U/win_tmp_4_4_V_fu_148_reg[511][47]
+    RAMB36_X1Y9          RAMB36E1                                     r  ccGaussianFilterGKer_U0/grp_processVECT_fu_18/lineBuff_3_V_U/processVECT_lineBbkb_ram_U/ram_reg_0/DIBDI[15]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=19733, unset)        1.023     1.023    ccGaussianFilterGKer_U0/grp_processVECT_fu_18/lineBuff_3_V_U/processVECT_lineBbkb_ram_U/ap_clk
+    RAMB36_X1Y9          RAMB36E1                                     r  ccGaussianFilterGKer_U0/grp_processVECT_fu_18/lineBuff_3_V_U/processVECT_lineBbkb_ram_U/ram_reg_0/CLKBWRCLK
+                         clock pessimism             -0.209     0.814    
+    RAMB36_X1Y9          RAMB36E1 (Hold_ramb36e1_CLKBWRCLK_DIBDI[15])
+                                                      0.119     0.933    ccGaussianFilterGKer_U0/grp_processVECT_fu_18/lineBuff_3_V_U/processVECT_lineBbkb_ram_U/ram_reg_0
+  -------------------------------------------------------------------
+                         required time                         -0.933    
+                         arrival time                           0.983    
+  -------------------------------------------------------------------
+                         slack                                  0.051    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         ap_clk
+Waveform(ns):       { 0.000 3.330 }
+Period(ns):         6.660
+Sources:            { ap_clk }
+
+Check Type        Corner  Lib Pin      Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
+Min Period        n/a     DSP48E1/CLK  n/a            3.292         6.660       3.368      DSP48_X3Y11   ccGaussianFilterGKer_U0/grp_processVECT_fu_18/hipaccRun_mul_32sfYi_U5/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg__0/CLK
+Low Pulse Width   Slow    SRL16E/CLK   n/a            0.780         3.330       2.550      SLICE_X50Y36  ccGaussianFilterGKer_U0/grp_processVECT_fu_18/win_2_2_V_fu_224_reg[128]_srl2/CLK
+High Pulse Width  Fast    SRL16E/CLK   n/a            0.780         3.330       2.550      SLICE_X78Y25  ccGaussianFilterGKer_U0/grp_processVECT_fu_18/ap_enable_reg_pp0_iter8_reg_srl5___ccGaussianFilterGKer_U0_grp_processVECT_fu_18_ap_enable_reg_pp0_iter8_reg_r/CLK
+
+
+

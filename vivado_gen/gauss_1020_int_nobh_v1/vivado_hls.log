@@ -1,0 +1,1613 @@
+================================================================
+  Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC
+  Version 2017.2
+  Build 1909853 on Thu Jun 15 18:55:24 MDT 2017
+  Copyright (C) 1986-2017 Xilinx, Inc. All Rights Reserved.
+================================================================
+INFO: [HLS 200-10] Running '/local/eda/xilinx/vivado_hls/2017.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'oezkan' on host 'codesign89.informatik.uni-erlangen.de' (Linux_x86_64 version 4.4.0-109-generic) on Sat Apr 14 20:18:09 CEST 2018
+INFO: [HLS 200-10] On os Ubuntu 14.04.5 LTS
+INFO: [HLS 200-10] In directory '/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1'
+INFO: [HLS 200-10] Opening project '/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project'.
+INFO: [HLS 200-10] Adding design file 'hipacc_run.cc' to the project
+INFO: [HLS 200-10] Adding test bench file 'main.cc' to the project
+INFO: [HLS 200-10] Opening solution '/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+WARNING: [HLS 200-40] Resetting target device to 'xc7z100ffg900-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6.66ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+make[1]: Entering directory `/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/csim/build'
+   Compiling ../../../../main.cc in debug mode
+   Compiling ../../../../hipacc_run.cc in debug mode
+   Generating csim.exe
+make[1]: Leaving directory `/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/csim/build'
+Calculating reference ...
+Comparing results ...
+Reference Input 
+       103       198       105       115        81       255        74       236        41       205       186       171       242       251       227
+         2        21       103       234        43       140       182       135        27       100       245        97       171        28       231
+       121       228       254         9        27       163       111       243       183       244       136       121        44       240       189
+       182       169       235        10        72        90       168       150       132       190        73        14       193        87       224
+       152       128       240        29        67       247       212       157        41       230       193       157        63       142       203
+       253       105       244       148        55        87       228       173        96         2       119        36        10        69       161
+       173       124       225       193       224       149        69       252        37       115        60       217       209        85       246
+       191        98       148       243        45        44        10       176        96       134       105       230       242        92       198
+       166       102       195       105        43        87        51        87       251        14       154       166       170       241       112
+        81       158       138       151       186       102        27        33       133       149        63        44       155       232       151
+       153        84        76       207       213        31       180        48       184        95       141        38        22       218        24
+       113       167       175       221        14       182       107        72        69        42        68       120       101       237        70
+Reference Output 
+4294951281        89        97       104       104       110       107       108       106       111       114       116       111       104        96
+     27215        95       100        98        96       104       110       116       115       117       116       115       114       114       114
+4294948185       105       103        94        89       100       114       123       123       120       114       110       112       120       128
+       105       116       110        94        89       100       117       124       121       113       102        95        96       109       123
+       119       127       120       104        99       107       119       121       113       103        94        90        93       108       123
+       122       129       127       114       108       108       112       110       100        93        91        94        99       110       120
+       118       127       128       118       106        99        99       100        94        93        97       106       114       118       115
+       108       119       124       115        98        83        82        88        90        93       100       113       126       125       113
+        95       106       116       111        95        77        74        81        89        95       101       112       125       125       112
+        84        99       112       109        97        80        73        77        85        88        89        97       110       115       108
+        83       100       116       116       106        89        78        78        83        86        86        93       102       106       102
+        87       105       119       119       108        93        82        81        84        87        88        92        95        96        92
+   Hipacc Output 
+        41        56        61        64        64        72        73        75        74        78        82        87        89        89        86
+        65        83        87        84        82        91        99       105       105       106       105       106       109       112       114
+        88       105       103        94        89       100       114       123       123       120       114       110       112       120       128
+       102       116       110        94        89       100       117       124       121       113       102        95        96       109       123
+       117       127       120       104        99       107       119       121       113       103        94        90        93       108       123
+       119       129       127       114       108       108       112       110       100        93        91        94        99       110       120
+       116       127       128       118       106        99        99       100        94        93        97       106       114       118       115
+       103       119       124       115        98        83        82        88        90        93       100       113       126       125       113
+        87       106       116       111        95        77        74        81        89        95       101       112       125       125       112
+        74        99       112       109        97        80        73        77        85        88        89        97       110       115       108
+        76       100       116       116       106        89        78        78        83        86        86        93       102       106       102
+        84       105       119       119       108        93        82        81        84        87        88        92        95        96        92
+Test PASSED
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-10] Analyzing design file 'hipacc_run.cc' ... 
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:50 ; elapsed = 00:00:39 . Memory (MB): peak = 342.902 ; gain = 13.043 ; free physical = 3749 ; free virtual = 39841
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:50 ; elapsed = 00:00:39 . Memory (MB): peak = 342.902 ; gain = 13.043 ; free physical = 3740 ; free virtual = 39831
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'getNewCoords' into 'process<1, 1020, 1020, 5, 5, int, int, ccGaussianFilterGKernelKernel>' (../../include/hipacc_vivado_filter.hpp:3719).
+INFO: [XFORM 203-603] Inlining function 'getNewCoords' into 'process<1, 1020, 1020, 5, 5, int, int, ccGaussianFilterGKernelKernel>' (../../include/hipacc_vivado_filter.hpp:3712).
+INFO: [XFORM 203-603] Inlining function 'ccGaussianFilterGKernelKernel::operator()' into 'process<1, 1020, 1020, 5, 5, int, int, ccGaussianFilterGKernelKernel>' (../../include/hipacc_vivado_filter.hpp:3729).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:59 ; elapsed = 00:00:49 . Memory (MB): peak = 716.609 ; gain = 386.750 ; free physical = 3549 ; free virtual = 39584
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:01 ; elapsed = 00:00:51 . Memory (MB): peak = 821.203 ; gain = 491.344 ; free physical = 3433 ; free virtual = 39468
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (../../include/hipacc_vivado_filter.hpp:3661) in function 'process<1, 1020, 1020, 5, 5, int, int, ccGaussianFilterGKernelKernel>' for pipelining.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.1' (../../include/hipacc_vivado_filter.hpp:3676) in function 'process<1, 1020, 1020, 5, 5, int, int, ccGaussianFilterGKernelKernel>' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.1.1' (../../include/hipacc_vivado_filter.hpp:3678) in function 'process<1, 1020, 1020, 5, 5, int, int, ccGaussianFilterGKernelKernel>' completely.
+INFO: [XFORM 203-501] Unrolling loop 'LINE_BUFF_1' (../../include/hipacc_vivado_filter.hpp:3689) in function 'process<1, 1020, 1020, 5, 5, int, int, ccGaussianFilterGKernelKernel>' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.3' (../../include/hipacc_vivado_filter.hpp:3710) in function 'process<1, 1020, 1020, 5, 5, int, int, ccGaussianFilterGKernelKernel>' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.3.1' (../../include/hipacc_vivado_filter.hpp:3711) in function 'process<1, 1020, 1020, 5, 5, int, int, ccGaussianFilterGKernelKernel>' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.4' (../../include/hipacc_vivado_filter.hpp:3717) in function 'process<1, 1020, 1020, 5, 5, int, int, ccGaussianFilterGKernelKernel>' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1.4.1' (../../include/hipacc_vivado_filter.hpp:3718) in function 'process<1, 1020, 1020, 5, 5, int, int, ccGaussianFilterGKernelKernel>' completely.
+INFO: [XFORM 203-101] Partitioning array 'lineBuff' (../../include/hipacc_vivado_filter.hpp:3648) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'win' (../../include/hipacc_vivado_filter.hpp:3650) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'win_tmp' (../../include/hipacc_vivado_filter.hpp:3652) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'win.0' (../../include/hipacc_vivado_filter.hpp:3650) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'win.1' (../../include/hipacc_vivado_filter.hpp:3650) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'win.2' (../../include/hipacc_vivado_filter.hpp:3650) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'win.3' (../../include/hipacc_vivado_filter.hpp:3650) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'win.4' (../../include/hipacc_vivado_filter.hpp:3650) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'win_tmp.0' (../../include/hipacc_vivado_filter.hpp:3652) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'win_tmp.1' (../../include/hipacc_vivado_filter.hpp:3652) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'win_tmp.2' (../../include/hipacc_vivado_filter.hpp:3652) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'win_tmp.3' (../../include/hipacc_vivado_filter.hpp:3652) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'win_tmp.4' (../../include/hipacc_vivado_filter.hpp:3652) in dimension 1 completely.
+INFO: [XFORM 203-712] Applying dataflow to function 'hipaccRun' (hipacc_run.cc:14), detected/extracted 1 process function(s):
+	 'ccGaussianFilterGKernel'.
+INFO: [XFORM 203-11] Balancing expressions in function 'process<1, 1020, 1020, 5, 5, int, int, ccGaussianFilterGKernelKernel>' (../../include/hipacc_vivado_filter.hpp:3634)...24 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:04 ; elapsed = 00:00:55 . Memory (MB): peak = 1142.656 ; gain = 812.797 ; free physical = 3265 ; free virtual = 39300
+INFO: [XFORM 203-541] Flattening a loop nest 'process_main_loop' (../../include/hipacc_vivado_filter.hpp:3660:67) in function 'process<1, 1020, 1020, 5, 5, int, int, ccGaussianFilterGKernelKernel>'.
+WARNING: [XFORM 203-631] Renaming function 'process<1, 1020, 1020, 5, 5, int, int, ccGaussianFilterGKernelKernel>' (../../include/hipacc_vivado_filter.hpp:51:60) into process.
+WARNING: [XFORM 203-631] Renaming function 'ccGaussianFilterGKernel' (./ccGaussianFilterG.cc:97:1) into ccGaussianFilterGKer.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:05 ; elapsed = 00:00:56 . Memory (MB): peak = 1172.266 ; gain = 842.406 ; free physical = 3141 ; free virtual = 39176
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hipaccRun' ...
+WARNING: [SYN 201-103] Legalizing function name 'process' to 'process_r'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'process_r' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'process_main_loop_L'.
+INFO: [SCHED 204-61] Pipelining result: Target II: 1, Final II: 1, Depth: 11.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 55.73 seconds; current allocated memory: 777.911 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-101] Start micro-architecture refinement ...
+INFO: [BIND 205-100] Current cost: 4912
+INFO: [BIND 205-100]  Iter  Moves  Swaps Merges  Swept   Fu     Reg     Cost   
+INFO: [BIND 205-100]   0      0      0      0      0     138    67      4912   
+INFO: [BIND 205-100]   1     41     41      0      0     138    67      4912   
+INFO: [BIND 205-100]   2     40     40      0      0     138    67      4912   
+INFO: [BIND 205-100]   3     41     41      0      0     138    67      4912   
+INFO: [BIND 205-100] Final cost: 4912
+INFO: [BIND 205-101] Done micro-architecture refinement; elapsed 0.30415 sec.
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 778.670 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'ccGaussianFilterGKer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 778.779 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-101] Start micro-architecture refinement ...
+INFO: [BIND 205-100] Current cost: 4863.36
+INFO: [BIND 205-100]  Iter  Moves  Swaps Merges  Swept   Fu     Reg     Cost   
+INFO: [BIND 205-100]   0      0      0      0      0      1      0     4863.36 
+INFO: [BIND 205-100]   1      0      0      0      0      1      0     4863.36 
+INFO: [BIND 205-100]   2      0      0      0      0      1      0     4863.36 
+INFO: [BIND 205-100]   3      0      0      0      0      1      0     4863.36 
+INFO: [BIND 205-100] Final cost: 4863.36
+INFO: [BIND 205-101] Done micro-architecture refinement; elapsed 0.119465 sec.
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 778.889 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Implementing module 'hipaccRun' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 778.986 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-101] Start micro-architecture refinement ...
+INFO: [BIND 205-100] Current cost: 4863.36
+INFO: [BIND 205-100]  Iter  Moves  Swaps Merges  Swept   Fu     Reg     Cost   
+INFO: [BIND 205-100]   0      0      0      0      0      1      0     4863.36 
+INFO: [BIND 205-100]   1      0      0      0      0      1      0     4863.36 
+INFO: [BIND 205-100]   2      0      0      0      0      1      0     4863.36 
+INFO: [BIND 205-100]   3      0      0      0      0      1      0     4863.36 
+INFO: [BIND 205-100] Final cost: 4863.36
+INFO: [BIND 205-101] Done micro-architecture refinement; elapsed 0.118369 sec.
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 779.098 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'process_r' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'process_r_lineBuff_0' to 'process_r_lineBufbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'process_r_lineBuff_1' to 'process_r_lineBufcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'process_r_lineBuff_2' to 'process_r_lineBufdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'process_r_lineBuff_3' to 'process_r_lineBufeOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hipaccRun_mul_32s_13ns_32_3' to 'hipaccRun_mul_32sfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hipaccRun_mul_32s_12ns_32_3' to 'hipaccRun_mul_32sg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hipaccRun_mul_32s_11ns_32_3' to 'hipaccRun_mul_32shbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hipaccRun_mul_32s_14ns_32_3' to 'hipaccRun_mul_32sibs' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'hipaccRun_mul_32sfYi': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hipaccRun_mul_32sg8j': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hipaccRun_mul_32shbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hipaccRun_mul_32sibs': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'process_r'.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 780.236 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'ccGaussianFilterGKer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'ccGaussianFilterGKer'.
+INFO: [HLS 200-111]  Elapsed time: 0.26 seconds; current allocated memory: 782.705 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hipaccRun' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hipaccRun/p_strmOut0_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'hipaccRun/p_strmIN_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'hipaccRun' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hipaccRun'.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 782.987 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'hipaccRun_mul_32sfYi_MulnS_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'hipaccRun_mul_32sg8j_MulnS_1'
+INFO: [RTMG 210-282] Generating pipelined core: 'hipaccRun_mul_32shbi_MulnS_2'
+INFO: [RTMG 210-282] Generating pipelined core: 'hipaccRun_mul_32sibs_MulnS_3'
+INFO: [RTMG 210-278] Implementing memory 'process_r_lineBufbkb_ram' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:06 ; elapsed = 00:00:57 . Memory (MB): peak = 1172.266 ; gain = 842.406 ; free physical = 3142 ; free virtual = 39172
+INFO: [SYSC 207-301] Generating SystemC RTL for hipaccRun.
+INFO: [VHDL 208-304] Generating VHDL RTL for hipaccRun.
+INFO: [VLOG 209-307] Generating Verilog RTL for hipaccRun.
+INFO: [IMPL 213-8] Exporting RTL as an IP in IP-XACT.
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/local/eda/xilinx/vivado/2017.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 14 20:19:22 2018...
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source run_vivado.tcl -notrace
+[Sat Apr 14 20:19:32 2018] Launched synth_1...
+Run output will be captured here: /scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/project.runs/synth_1/runme.log
+[Sat Apr 14 20:19:32 2018] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log hipaccRun.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source hipaccRun.tcl
+
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source hipaccRun.tcl -notrace
+Command: synth_design -top hipaccRun -part xc7z100ffg900-1 -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z100-ffg900'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z100-ffg900'
+INFO: [Common 17-1223] The version limit for your license is '2017.12' and will expire in -104 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4429 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1214.836 ; gain = 77.750 ; free physical = 2900 ; free virtual = 38929
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'hipaccRun' [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun.v:12]
+INFO: [Synth 8-638] synthesizing module 'ccGaussianFilterGKer' [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/ccGaussianFilterGKer.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_state2 bound to: 2'b10 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/ccGaussianFilterGKer.v:50]
+INFO: [Synth 8-638] synthesizing module 'process_r' [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 3'b001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 3'b010 
+	Parameter ap_ST_fsm_state13 bound to: 3'b100 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:48]
+INFO: [Synth 8-638] synthesizing module 'process_r_lineBufbkb' [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r_lineBufbkb.v:54]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 1020 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'process_r_lineBufbkb_ram' [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r_lineBufbkb.v:9]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 10 - type: integer 
+	Parameter MEM_SIZE bound to: 1020 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r_lineBufbkb.v:24]
+INFO: [Synth 8-256] done synthesizing module 'process_r_lineBufbkb_ram' (1#1) [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r_lineBufbkb.v:9]
+INFO: [Synth 8-256] done synthesizing module 'process_r_lineBufbkb' (2#1) [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r_lineBufbkb.v:54]
+INFO: [Synth 8-638] synthesizing module 'hipaccRun_mul_32sfYi' [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sfYi.v:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 13 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'hipaccRun_mul_32sfYi_MulnS_0' [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sfYi.v:11]
+INFO: [Synth 8-256] done synthesizing module 'hipaccRun_mul_32sfYi_MulnS_0' (3#1) [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sfYi.v:11]
+INFO: [Synth 8-256] done synthesizing module 'hipaccRun_mul_32sfYi' (4#1) [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sfYi.v:35]
+INFO: [Synth 8-638] synthesizing module 'hipaccRun_mul_32sg8j' [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sg8j.v:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 12 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'hipaccRun_mul_32sg8j_MulnS_1' [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sg8j.v:11]
+INFO: [Synth 8-256] done synthesizing module 'hipaccRun_mul_32sg8j_MulnS_1' (5#1) [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sg8j.v:11]
+INFO: [Synth 8-256] done synthesizing module 'hipaccRun_mul_32sg8j' (6#1) [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sg8j.v:35]
+INFO: [Synth 8-638] synthesizing module 'hipaccRun_mul_32shbi' [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32shbi.v:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'hipaccRun_mul_32shbi_MulnS_2' [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32shbi.v:11]
+INFO: [Synth 8-256] done synthesizing module 'hipaccRun_mul_32shbi_MulnS_2' (7#1) [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32shbi.v:11]
+INFO: [Synth 8-256] done synthesizing module 'hipaccRun_mul_32shbi' (8#1) [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32shbi.v:35]
+INFO: [Synth 8-638] synthesizing module 'hipaccRun_mul_32sibs' [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sibs.v:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 14 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'hipaccRun_mul_32sibs_MulnS_3' [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sibs.v:11]
+INFO: [Synth 8-256] done synthesizing module 'hipaccRun_mul_32sibs_MulnS_3' (9#1) [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sibs.v:11]
+INFO: [Synth 8-256] done synthesizing module 'hipaccRun_mul_32sibs' (10#1) [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sibs.v:35]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:1030]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:1032]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:1122]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:1130]
+WARNING: [Synth 8-6014] Unused sequential element ap_idle_pp0_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:753]
+WARNING: [Synth 8-6014] Unused sequential element in_s_V_blk_n_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:825]
+WARNING: [Synth 8-6014] Unused sequential element out_s_V_blk_n_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:937]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00001001_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:987]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state12_pp0_stage0_iter10_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:1003]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state4_pp0_stage0_iter2_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:1011]
+WARNING: [Synth 8-6014] Unused sequential element grp_fu_693_ce_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:358]
+WARNING: [Synth 8-6014] Unused sequential element grp_fu_714_ce_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:373]
+WARNING: [Synth 8-6014] Unused sequential element grp_fu_719_ce_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:388]
+WARNING: [Synth 8-6014] Unused sequential element grp_fu_724_ce_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:403]
+WARNING: [Synth 8-6014] Unused sequential element grp_fu_729_ce_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:418]
+WARNING: [Synth 8-6014] Unused sequential element lineBuff_1_ce1_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:295]
+WARNING: [Synth 8-6014] Unused sequential element lineBuff_1_we1_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:296]
+WARNING: [Synth 8-6014] Unused sequential element lineBuff_2_ce0_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:308]
+WARNING: [Synth 8-6014] Unused sequential element lineBuff_2_ce1_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:311]
+WARNING: [Synth 8-6014] Unused sequential element lineBuff_2_we1_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:312]
+WARNING: [Synth 8-6014] Unused sequential element lineBuff_3_ce0_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:324]
+WARNING: [Synth 8-6014] Unused sequential element lineBuff_3_ce1_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:327]
+WARNING: [Synth 8-6014] Unused sequential element lineBuff_3_we1_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:328]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00011011_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:995]
+INFO: [Synth 8-256] done synthesizing module 'process_r' (11#1) [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:10]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/ccGaussianFilterGKer.v:188]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_ignore_call2_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/ccGaussianFilterGKer.v:192]
+INFO: [Synth 8-256] done synthesizing module 'ccGaussianFilterGKer' (12#1) [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/ccGaussianFilterGKer.v:10]
+INFO: [Synth 8-256] done synthesizing module 'hipaccRun' (13#1) [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun.v:12]
+WARNING: [Synth 8-3331] design hipaccRun_mul_32sibs has unconnected port reset
+WARNING: [Synth 8-3331] design hipaccRun_mul_32shbi has unconnected port reset
+WARNING: [Synth 8-3331] design hipaccRun_mul_32sg8j has unconnected port reset
+WARNING: [Synth 8-3331] design hipaccRun_mul_32sfYi has unconnected port reset
+WARNING: [Synth 8-3331] design process_r_lineBufbkb has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1255.344 ; gain = 118.258 ; free physical = 2907 ; free virtual = 38937
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1255.344 ; gain = 118.258 ; free physical = 2908 ; free virtual = 38938
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z100ffg900-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun.xdc]
+Finished Parsing XDC File [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1655.930 ; gain = 1.000 ; free physical = 2567 ; free virtual = 38602
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1656.180 ; gain = 519.094 ; free physical = 2657 ; free virtual = 38692
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z100ffg900-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1656.180 ; gain = 519.094 ; free physical = 2657 ; free virtual = 38692
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1656.180 ; gain = 519.094 ; free physical = 2659 ; free virtual = 38694
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'lineBuff_1_addr_reg_949_reg[9:0]' into 'lineBuff_0_addr_reg_975_reg[9:0]' [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:622]
+INFO: [Synth 8-4471] merging register 'lineBuff_2_addr_reg_985_reg[9:0]' into 'lineBuff_0_addr_reg_975_reg[9:0]' [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:623]
+INFO: [Synth 8-4471] merging register 'lineBuff_3_addr_reg_957_reg[9:0]' into 'lineBuff_0_addr_reg_975_reg[9:0]' [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:624]
+INFO: [Synth 8-4471] merging register 'win_tmp_1_4_reg_990_reg[31:0]' into 'win_tmp_1_3_fu_142_reg[31:0]' [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:281]
+INFO: [Synth 8-4471] merging register 'win_tmp_2_4_reg_1028_reg[31:0]' into 'win_tmp_2_3_fu_146_reg[31:0]' [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:297]
+INFO: [Synth 8-4471] merging register 'win_tmp_3_4_reg_1002_reg[31:0]' into 'win_tmp_3_3_fu_150_reg[31:0]' [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:313]
+INFO: [Synth 8-4471] merging register 'ap_reg_pp0_iter2_lineBuff_1_addr_reg_949_reg[9:0]' into 'ap_reg_pp0_iter2_lineBuff_0_addr_reg_975_reg[9:0]' [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:294]
+INFO: [Synth 8-4471] merging register 'ap_reg_pp0_iter2_lineBuff_2_addr_reg_985_reg[9:0]' into 'ap_reg_pp0_iter2_lineBuff_0_addr_reg_975_reg[9:0]' [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:310]
+INFO: [Synth 8-4471] merging register 'ap_reg_pp0_iter2_lineBuff_3_addr_reg_957_reg[9:0]' into 'ap_reg_pp0_iter2_lineBuff_0_addr_reg_975_reg[9:0]' [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:326]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter2_lineBuff_1_addr_reg_949_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:294]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter2_lineBuff_2_addr_reg_985_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:310]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter2_lineBuff_3_addr_reg_957_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:326]
+WARNING: [Synth 8-6014] Unused sequential element lineBuff_1_addr_reg_949_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:622]
+WARNING: [Synth 8-6014] Unused sequential element lineBuff_2_addr_reg_985_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:623]
+WARNING: [Synth 8-6014] Unused sequential element lineBuff_3_addr_reg_957_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:624]
+WARNING: [Synth 8-6014] Unused sequential element win_tmp_1_4_reg_990_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:281]
+WARNING: [Synth 8-6014] Unused sequential element win_tmp_2_4_reg_1028_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:297]
+WARNING: [Synth 8-6014] Unused sequential element win_tmp_3_4_reg_1002_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:313]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_373_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_321_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element col_assign_1_reg_257_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:550]
+WARNING: [Synth 8-6014] Unused sequential element indvar_flatten_reg_246_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:566]
+WARNING: [Synth 8-6014] Unused sequential element col_assign_mid2_reg_934_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:610]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1656.180 ; gain = 519.094 ; free physical = 2650 ; free virtual = 38685
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 3     
+	   4 Input     32 Bit       Adders := 5     
+	   2 Input     10 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 63    
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 33    
++---Multipliers : 
+	                14x32  Multipliers := 2     
+	                13x32  Multipliers := 2     
+	                12x32  Multipliers := 1     
+	                15x32  Multipliers := 1     
++---RAMs : 
+	              31K Bit         RAMs := 4     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module process_r_lineBufbkb_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	              31K Bit         RAMs := 1     
+Module hipaccRun_mul_32sfYi_MulnS_0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	               13 Bit    Registers := 1     
++---Multipliers : 
+	                14x32  Multipliers := 1     
+Module hipaccRun_mul_32sg8j_MulnS_1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
++---Multipliers : 
+	                13x32  Multipliers := 1     
+Module hipaccRun_mul_32shbi_MulnS_2 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
++---Multipliers : 
+	                12x32  Multipliers := 1     
+Module hipaccRun_mul_32sibs_MulnS_3 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	               14 Bit    Registers := 1     
++---Multipliers : 
+	                15x32  Multipliers := 1     
+Module process_r 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 3     
+	   4 Input     32 Bit       Adders := 5     
+	   2 Input     10 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 47    
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 31    
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module ccGaussianFilterGKer 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2020 (col length:140)
+BRAMs: 1510 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "exitcond_flatten_fu_373_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_321_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sibs.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sfYi.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sfYi.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32shbi.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sg8j.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sg8j.v:24]
+WARNING: [Synth 8-6014] Unused sequential element hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sfYi.v:23]
+WARNING: [Synth 8-6014] Unused sequential element hipaccRun_mul_32sfYi_U2/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sfYi.v:23]
+WARNING: [Synth 8-6014] Unused sequential element hipaccRun_mul_32sg8j_U3/hipaccRun_mul_32sg8j_MulnS_1_U/buff0_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sg8j.v:23]
+WARNING: [Synth 8-6014] Unused sequential element hipaccRun_mul_32sg8j_U4/hipaccRun_mul_32sg8j_MulnS_1_U/buff0_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sg8j.v:23]
+WARNING: [Synth 8-6014] Unused sequential element hipaccRun_mul_32shbi_U5/hipaccRun_mul_32shbi_MulnS_2_U/buff0_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32shbi.v:23]
+WARNING: [Synth 8-6014] Unused sequential element hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sibs.v:23]
+WARNING: [Synth 8-6014] Unused sequential element hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sibs.v:23]
+WARNING: [Synth 8-6014] Unused sequential element hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sfYi.v:23]
+WARNING: [Synth 8-6014] Unused sequential element hipaccRun_mul_32sfYi_U2/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sfYi.v:23]
+WARNING: [Synth 8-6014] Unused sequential element hipaccRun_mul_32shbi_U5/hipaccRun_mul_32shbi_MulnS_2_U/buff0_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32shbi.v:23]
+WARNING: [Synth 8-6014] Unused sequential element hipaccRun_mul_32sg8j_U4/hipaccRun_mul_32sg8j_MulnS_1_U/buff0_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sg8j.v:23]
+WARNING: [Synth 8-6014] Unused sequential element hipaccRun_mul_32sg8j_U3/hipaccRun_mul_32sg8j_MulnS_1_U/buff0_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sg8j.v:23]
+WARNING: [Synth 8-6014] Unused sequential element hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/b_reg0_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sfYi.v:24]
+WARNING: [Synth 8-6014] Unused sequential element hipaccRun_mul_32sfYi_U2/hipaccRun_mul_32sfYi_MulnS_0_U/b_reg0_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sfYi.v:24]
+WARNING: [Synth 8-6014] Unused sequential element hipaccRun_mul_32sg8j_U3/hipaccRun_mul_32sg8j_MulnS_1_U/b_reg0_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sg8j.v:24]
+WARNING: [Synth 8-6014] Unused sequential element hipaccRun_mul_32sg8j_U4/hipaccRun_mul_32sg8j_MulnS_1_U/b_reg0_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sg8j.v:24]
+WARNING: [Synth 8-6014] Unused sequential element hipaccRun_mul_32shbi_U5/hipaccRun_mul_32shbi_MulnS_2_U/b_reg0_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32shbi.v:24]
+WARNING: [Synth 8-6014] Unused sequential element hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/b_reg0_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sibs.v:24]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sibs.v:24]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sibs.v:24]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sibs.v:23]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sfYi.v:24]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sfYi.v:24]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sfYi.v:23]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sfYi.v:24]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sfYi.v:24]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sfYi.v:23]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32shbi.v:24]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32shbi.v:24]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32shbi.v:23]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sg8j.v:24]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sg8j.v:24]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sg8j.v:23]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sg8j.v:24]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sg8j.v:24]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun_mul_32sg8j.v:23]
+WARNING: [Synth 8-6014] Unused sequential element indvar_flatten_reg_246_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:566]
+WARNING: [Synth 8-6014] Unused sequential element col_assign_mid2_reg_934_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:610]
+WARNING: [Synth 8-6014] Unused sequential element col_assign_1_reg_257_reg was removed.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/process_r.v:550]
+DSP Report: Generating DSP hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/tmp_product, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/tmp_product.
+DSP Report: register A is absorbed into DSP hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/tmp_product.
+DSP Report: operator hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/tmp_product is absorbed into DSP hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/tmp_product.
+DSP Report: operator hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/tmp_product is absorbed into DSP hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/tmp_product.
+DSP Report: Generating DSP hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register B is absorbed into DSP hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg.
+DSP Report: register hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg is absorbed into DSP hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg.
+DSP Report: operator hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/tmp_product is absorbed into DSP hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg.
+DSP Report: operator hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/tmp_product is absorbed into DSP hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg.
+DSP Report: Generating DSP hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/tmp_product, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/tmp_product.
+DSP Report: register A is absorbed into DSP hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/tmp_product.
+DSP Report: operator hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/tmp_product is absorbed into DSP hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/tmp_product.
+DSP Report: operator hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/tmp_product is absorbed into DSP hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/tmp_product.
+DSP Report: Generating DSP hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register B is absorbed into DSP hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg.
+DSP Report: register hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg is absorbed into DSP hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg.
+DSP Report: operator hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/tmp_product is absorbed into DSP hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg.
+DSP Report: operator hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/tmp_product is absorbed into DSP hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg.
+DSP Report: Generating DSP hipaccRun_mul_32sfYi_U2/hipaccRun_mul_32sfYi_MulnS_0_U/tmp_product, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP hipaccRun_mul_32sfYi_U2/hipaccRun_mul_32sfYi_MulnS_0_U/tmp_product.
+DSP Report: register A is absorbed into DSP hipaccRun_mul_32sfYi_U2/hipaccRun_mul_32sfYi_MulnS_0_U/tmp_product.
+DSP Report: operator hipaccRun_mul_32sfYi_U2/hipaccRun_mul_32sfYi_MulnS_0_U/tmp_product is absorbed into DSP hipaccRun_mul_32sfYi_U2/hipaccRun_mul_32sfYi_MulnS_0_U/tmp_product.
+DSP Report: operator hipaccRun_mul_32sfYi_U2/hipaccRun_mul_32sfYi_MulnS_0_U/tmp_product is absorbed into DSP hipaccRun_mul_32sfYi_U2/hipaccRun_mul_32sfYi_MulnS_0_U/tmp_product.
+DSP Report: Generating DSP hipaccRun_mul_32sfYi_U2/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register B is absorbed into DSP hipaccRun_mul_32sfYi_U2/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg.
+DSP Report: register hipaccRun_mul_32sfYi_U2/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg is absorbed into DSP hipaccRun_mul_32sfYi_U2/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg.
+DSP Report: operator hipaccRun_mul_32sfYi_U2/hipaccRun_mul_32sfYi_MulnS_0_U/tmp_product is absorbed into DSP hipaccRun_mul_32sfYi_U2/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg.
+DSP Report: operator hipaccRun_mul_32sfYi_U2/hipaccRun_mul_32sfYi_MulnS_0_U/tmp_product is absorbed into DSP hipaccRun_mul_32sfYi_U2/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg.
+DSP Report: Generating DSP hipaccRun_mul_32shbi_U5/hipaccRun_mul_32shbi_MulnS_2_U/tmp_product, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP hipaccRun_mul_32shbi_U5/hipaccRun_mul_32shbi_MulnS_2_U/tmp_product.
+DSP Report: register A is absorbed into DSP hipaccRun_mul_32shbi_U5/hipaccRun_mul_32shbi_MulnS_2_U/tmp_product.
+DSP Report: operator hipaccRun_mul_32shbi_U5/hipaccRun_mul_32shbi_MulnS_2_U/tmp_product is absorbed into DSP hipaccRun_mul_32shbi_U5/hipaccRun_mul_32shbi_MulnS_2_U/tmp_product.
+DSP Report: operator hipaccRun_mul_32shbi_U5/hipaccRun_mul_32shbi_MulnS_2_U/tmp_product is absorbed into DSP hipaccRun_mul_32shbi_U5/hipaccRun_mul_32shbi_MulnS_2_U/tmp_product.
+DSP Report: Generating DSP hipaccRun_mul_32shbi_U5/hipaccRun_mul_32shbi_MulnS_2_U/buff0_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register B is absorbed into DSP hipaccRun_mul_32shbi_U5/hipaccRun_mul_32shbi_MulnS_2_U/buff0_reg.
+DSP Report: register hipaccRun_mul_32shbi_U5/hipaccRun_mul_32shbi_MulnS_2_U/buff0_reg is absorbed into DSP hipaccRun_mul_32shbi_U5/hipaccRun_mul_32shbi_MulnS_2_U/buff0_reg.
+DSP Report: operator hipaccRun_mul_32shbi_U5/hipaccRun_mul_32shbi_MulnS_2_U/tmp_product is absorbed into DSP hipaccRun_mul_32shbi_U5/hipaccRun_mul_32shbi_MulnS_2_U/buff0_reg.
+DSP Report: operator hipaccRun_mul_32shbi_U5/hipaccRun_mul_32shbi_MulnS_2_U/tmp_product is absorbed into DSP hipaccRun_mul_32shbi_U5/hipaccRun_mul_32shbi_MulnS_2_U/buff0_reg.
+DSP Report: Generating DSP hipaccRun_mul_32sg8j_U4/hipaccRun_mul_32sg8j_MulnS_1_U/tmp_product, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP hipaccRun_mul_32sg8j_U4/hipaccRun_mul_32sg8j_MulnS_1_U/tmp_product.
+DSP Report: register A is absorbed into DSP hipaccRun_mul_32sg8j_U4/hipaccRun_mul_32sg8j_MulnS_1_U/tmp_product.
+DSP Report: operator hipaccRun_mul_32sg8j_U4/hipaccRun_mul_32sg8j_MulnS_1_U/tmp_product is absorbed into DSP hipaccRun_mul_32sg8j_U4/hipaccRun_mul_32sg8j_MulnS_1_U/tmp_product.
+DSP Report: operator hipaccRun_mul_32sg8j_U4/hipaccRun_mul_32sg8j_MulnS_1_U/tmp_product is absorbed into DSP hipaccRun_mul_32sg8j_U4/hipaccRun_mul_32sg8j_MulnS_1_U/tmp_product.
+DSP Report: Generating DSP hipaccRun_mul_32sg8j_U4/hipaccRun_mul_32sg8j_MulnS_1_U/buff0_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register B is absorbed into DSP hipaccRun_mul_32sg8j_U4/hipaccRun_mul_32sg8j_MulnS_1_U/buff0_reg.
+DSP Report: register hipaccRun_mul_32sg8j_U4/hipaccRun_mul_32sg8j_MulnS_1_U/buff0_reg is absorbed into DSP hipaccRun_mul_32sg8j_U4/hipaccRun_mul_32sg8j_MulnS_1_U/buff0_reg.
+DSP Report: operator hipaccRun_mul_32sg8j_U4/hipaccRun_mul_32sg8j_MulnS_1_U/tmp_product is absorbed into DSP hipaccRun_mul_32sg8j_U4/hipaccRun_mul_32sg8j_MulnS_1_U/buff0_reg.
+DSP Report: operator hipaccRun_mul_32sg8j_U4/hipaccRun_mul_32sg8j_MulnS_1_U/tmp_product is absorbed into DSP hipaccRun_mul_32sg8j_U4/hipaccRun_mul_32sg8j_MulnS_1_U/buff0_reg.
+DSP Report: Generating DSP hipaccRun_mul_32sg8j_U3/hipaccRun_mul_32sg8j_MulnS_1_U/tmp_product, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP hipaccRun_mul_32sg8j_U3/hipaccRun_mul_32sg8j_MulnS_1_U/tmp_product.
+DSP Report: register A is absorbed into DSP hipaccRun_mul_32sg8j_U3/hipaccRun_mul_32sg8j_MulnS_1_U/tmp_product.
+DSP Report: operator hipaccRun_mul_32sg8j_U3/hipaccRun_mul_32sg8j_MulnS_1_U/tmp_product is absorbed into DSP hipaccRun_mul_32sg8j_U3/hipaccRun_mul_32sg8j_MulnS_1_U/tmp_product.
+DSP Report: operator hipaccRun_mul_32sg8j_U3/hipaccRun_mul_32sg8j_MulnS_1_U/tmp_product is absorbed into DSP hipaccRun_mul_32sg8j_U3/hipaccRun_mul_32sg8j_MulnS_1_U/tmp_product.
+DSP Report: Generating DSP hipaccRun_mul_32sg8j_U3/hipaccRun_mul_32sg8j_MulnS_1_U/buff0_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register B is absorbed into DSP hipaccRun_mul_32sg8j_U3/hipaccRun_mul_32sg8j_MulnS_1_U/buff0_reg.
+DSP Report: register hipaccRun_mul_32sg8j_U3/hipaccRun_mul_32sg8j_MulnS_1_U/buff0_reg is absorbed into DSP hipaccRun_mul_32sg8j_U3/hipaccRun_mul_32sg8j_MulnS_1_U/buff0_reg.
+DSP Report: operator hipaccRun_mul_32sg8j_U3/hipaccRun_mul_32sg8j_MulnS_1_U/tmp_product is absorbed into DSP hipaccRun_mul_32sg8j_U3/hipaccRun_mul_32sg8j_MulnS_1_U/buff0_reg.
+DSP Report: operator hipaccRun_mul_32sg8j_U3/hipaccRun_mul_32sg8j_MulnS_1_U/tmp_product is absorbed into DSP hipaccRun_mul_32sg8j_U3/hipaccRun_mul_32sg8j_MulnS_1_U/buff0_reg.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ccGaussianFilterGKer_U0/ap_done_reg_reg )
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[47]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[46]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[45]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[44]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[43]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[42]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[41]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[40]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[39]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[38]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[37]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[36]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[35]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[34]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[33]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[32]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[31]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[30]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[29]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[28]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[27]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[26]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[25]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[24]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[23]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[22]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[21]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[20]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[19]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[18]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/buff0_reg[17]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/a_reg0_reg[16]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/a_reg0_reg[15]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/a_reg0_reg[14]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/a_reg0_reg[13]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/a_reg0_reg[12]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/a_reg0_reg[11]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/a_reg0_reg[10]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/a_reg0_reg[9]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/a_reg0_reg[8]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/a_reg0_reg[7]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/a_reg0_reg[6]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/a_reg0_reg[5]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/a_reg0_reg[4]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/a_reg0_reg[3]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/a_reg0_reg[2]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/a_reg0_reg[1]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sibs_U6/hipaccRun_mul_32sibs_MulnS_3_U/a_reg0_reg[0]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[47]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[46]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[45]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[44]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[43]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[42]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[41]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[40]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[39]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[38]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[37]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[36]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[35]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[34]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[33]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[32]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[31]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[30]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[29]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[28]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[27]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[26]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[25]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[24]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[23]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[22]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[21]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[20]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[19]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[18]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[17]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/a_reg0_reg[16]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/a_reg0_reg[15]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/a_reg0_reg[14]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/a_reg0_reg[13]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/a_reg0_reg[12]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/a_reg0_reg[11]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/a_reg0_reg[10]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/a_reg0_reg[9]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/a_reg0_reg[8]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/a_reg0_reg[7]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/a_reg0_reg[6]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/a_reg0_reg[5]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/a_reg0_reg[4]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/a_reg0_reg[3]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/a_reg0_reg[2]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/a_reg0_reg[1]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U1/hipaccRun_mul_32sfYi_MulnS_0_U/a_reg0_reg[0]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U2/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[47]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U2/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[46]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U2/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[45]) is unused and will be removed from module hipaccRun.
+WARNING: [Synth 8-3332] Sequential element (ccGaussianFilterGKer_U0/grp_process_r_fu_18/hipaccRun_mul_32sfYi_U2/hipaccRun_mul_32sfYi_MulnS_0_U/buff0_reg[44]) is unused and will be removed from module hipaccRun.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1656.180 ; gain = 519.094 ; free physical = 2626 ; free virtual = 38661
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name               | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|process_r_lineBufbkb_ram: | ram_reg    | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|process_r_lineBufbkb_ram: | ram_reg    | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|process_r_lineBufbkb_ram: | ram_reg    | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|process_r_lineBufbkb_ram: | ram_reg    | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|process_r   | A2*B2           | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|process_r   | (PCIN>>17)+A*B2 | 15     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|process_r   | A2*B2           | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|process_r   | (PCIN>>17)+A*B2 | 15     | 14     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|process_r   | A2*B2           | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|process_r   | (PCIN>>17)+A*B2 | 15     | 14     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|process_r   | A2*B2           | 18     | 12     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|process_r   | (PCIN>>17)+A*B2 | 15     | 12     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|process_r   | A2*B2           | 18     | 13     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|process_r   | (PCIN>>17)+A*B2 | 15     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|process_r   | A2*B2           | 18     | 13     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|process_r   | (PCIN>>17)+A*B2 | 15     | 13     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1666.930 ; gain = 529.844 ; free physical = 2483 ; free virtual = 38519
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1672.930 ; gain = 535.844 ; free physical = 2478 ; free virtual = 38513
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1703.438 ; gain = 566.352 ; free physical = 2473 ; free virtual = 38508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1703.438 ; gain = 566.352 ; free physical = 2472 ; free virtual = 38507
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1703.438 ; gain = 566.352 ; free physical = 2472 ; free virtual = 38507
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1703.438 ; gain = 566.352 ; free physical = 2472 ; free virtual = 38507
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1703.438 ; gain = 566.352 ; free physical = 2472 ; free virtual = 38507
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1703.438 ; gain = 566.352 ; free physical = 2473 ; free virtual = 38509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1703.438 ; gain = 566.352 ; free physical = 2474 ; free virtual = 38509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                                       | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|hipaccRun   | ccGaussianFilterGKer_U0/grp_process_r_fu_18/ap_reg_pp0_iter5_win_tmp_2_2_load_reg_1013_reg[31] | 3      | 32    | NO           | NO                 | YES               | 32     | 0       | 
+|hipaccRun   | ccGaussianFilterGKer_U0/grp_process_r_fu_18/ap_enable_reg_pp0_iter9_reg                        | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    93|
+|2     |DSP48E1   |     6|
+|3     |DSP48E1_2 |     6|
+|4     |LUT1      |    98|
+|5     |LUT2      |   116|
+|6     |LUT3      |   252|
+|7     |LUT4      |   133|
+|8     |LUT5      |   166|
+|9     |LUT6      |   179|
+|10    |RAMB36E1  |     4|
+|11    |SRL16E    |    33|
+|12    |FDRE      |  1536|
+|13    |FDSE      |     2|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------------------------------+-------------------------------+------+
+|      |Instance                               |Module                         |Cells |
++------+---------------------------------------+-------------------------------+------+
+|1     |top                                    |                               |  2624|
+|2     |  ccGaussianFilterGKer_U0              |ccGaussianFilterGKer           |  2624|
+|3     |    grp_process_r_fu_18                |process_r                      |  2620|
+|4     |      hipaccRun_mul_32sfYi_U1          |hipaccRun_mul_32sfYi           |    32|
+|5     |        hipaccRun_mul_32sfYi_MulnS_0_U |hipaccRun_mul_32sfYi_MulnS_0_9 |    32|
+|6     |      hipaccRun_mul_32sfYi_U2          |hipaccRun_mul_32sfYi_0         |    32|
+|7     |        hipaccRun_mul_32sfYi_MulnS_0_U |hipaccRun_mul_32sfYi_MulnS_0   |    32|
+|8     |      hipaccRun_mul_32sg8j_U3          |hipaccRun_mul_32sg8j           |    33|
+|9     |        hipaccRun_mul_32sg8j_MulnS_1_U |hipaccRun_mul_32sg8j_MulnS_1_8 |    33|
+|10    |      hipaccRun_mul_32sg8j_U4          |hipaccRun_mul_32sg8j_1         |    31|
+|11    |        hipaccRun_mul_32sg8j_MulnS_1_U |hipaccRun_mul_32sg8j_MulnS_1   |    31|
+|12    |      hipaccRun_mul_32shbi_U5          |hipaccRun_mul_32shbi           |    30|
+|13    |        hipaccRun_mul_32shbi_MulnS_2_U |hipaccRun_mul_32shbi_MulnS_2   |    30|
+|14    |      hipaccRun_mul_32sibs_U6          |hipaccRun_mul_32sibs           |    33|
+|15    |        hipaccRun_mul_32sibs_MulnS_3_U |hipaccRun_mul_32sibs_MulnS_3   |    33|
+|16    |      lineBuff_0_U                     |process_r_lineBufbkb           |   130|
+|17    |        process_r_lineBufbkb_ram_U     |process_r_lineBufbkb_ram_7     |   130|
+|18    |      lineBuff_1_U                     |process_r_lineBufbkb_2         |     1|
+|19    |        process_r_lineBufbkb_ram_U     |process_r_lineBufbkb_ram_6     |     1|
+|20    |      lineBuff_2_U                     |process_r_lineBufbkb_3         |    31|
+|21    |        process_r_lineBufbkb_ram_U     |process_r_lineBufbkb_ram_5     |    31|
+|22    |      lineBuff_3_U                     |process_r_lineBufbkb_4         |    96|
+|23    |        process_r_lineBufbkb_ram_U     |process_r_lineBufbkb_ram       |    96|
++------+---------------------------------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1703.438 ; gain = 566.352 ; free physical = 2474 ; free virtual = 38509
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 340 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1703.438 ; gain = 165.516 ; free physical = 2559 ; free virtual = 38594
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1703.445 ; gain = 566.352 ; free physical = 2563 ; free virtual = 38598
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 109 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'hipaccRun' is not ideal for floorplanning, since the cellview 'process_r' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+63 Infos, 183 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1703.688 ; gain = 610.078 ; free physical = 2547 ; free virtual = 38582
+INFO: [Common 17-1381] The checkpoint '/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/project.runs/synth_1/hipaccRun.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1709.453 ; gain = 0.000 ; free physical = 2548 ; free virtual = 38584
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 14 20:20:07 2018...
+[Sat Apr 14 20:20:09 2018] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:37 . Memory (MB): peak = 1150.441 ; gain = 8.000 ; free physical = 3315 ; free virtual = 39294
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z100ffg900-1
+INFO: [Netlist 29-17] Analyzing 109 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'hipaccRun' is not ideal for floorplanning, since the cellview 'process_r' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Device 21-403] Loading part xc7z100ffg900-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun.xdc:2]
+Finished Parsing XDC File [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1498.461 ; gain = 348.020 ; free physical = 3010 ; free virtual = 38955
+report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1498.461 ; gain = 0.000 ; free physical = 3012 ; free virtual = 38957
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+report_timing: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2021.066 ; gain = 522.605 ; free physical = 2640 ; free virtual = 38631
+[Sat Apr 14 20:20:24 2018] Launched impl_1...
+Run output will be captured here: /scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/project.runs/impl_1/runme.log
+[Sat Apr 14 20:20:24 2018] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log hipaccRun.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source hipaccRun.tcl -notrace
+
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+error reading package index file /local/eda/xilinx/vivado/2017.2/tps/tcl/tcl8.5/pkgIndex.tcl: couldn't read file "/usr/local/eda/xilinx/vivado/tincr/tincr/pkgIndex.tcl": no such file or directory
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source hipaccRun.tcl -notrace
+Command: open_checkpoint /scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/project.runs/impl_1/hipaccRun.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1077.348 ; gain = 0.000 ; free physical = 2602 ; free virtual = 38561
+INFO: [Netlist 29-17] Analyzing 109 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'hipaccRun' is not ideal for floorplanning, since the cellview 'process_r' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Device 21-403] Loading part xc7z100ffg900-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/project.runs/impl_1/.Xil/Vivado-4652-codesign89/dcp3/hipaccRun.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun.xdc:2]
+Finished Parsing XDC File [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/project.runs/impl_1/.Xil/Vivado-4652-codesign89/dcp3/hipaccRun.xdc]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.2 (64-bit) build 1909853
+open_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1483.711 ; gain = 406.363 ; free physical = 2263 ; free virtual = 38266
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z100-ffg900'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z100-ffg900'
+INFO: [Common 17-1223] The version limit for your license is '2017.12' and will expire in -104 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+Command: report_drc (run_mandatory_drcs) for: opt_checks
+INFO: [DRC 23-27] Running DRC with 8 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.44 . Memory (MB): peak = 1516.746 ; gain = 31.031 ; free physical = 2255 ; free virtual = 38258
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 10a6af2e9
+
+Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2002.293 ; gain = 0.000 ; free physical = 1842 ; free virtual = 37845
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 95 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 10a6af2e9
+
+Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2002.293 ; gain = 0.000 ; free physical = 1841 ; free virtual = 37844
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: ca43d5a6
+
+Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2002.293 ; gain = 0.000 ; free physical = 1841 ; free virtual = 37844
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: ca43d5a6
+
+Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.19 . Memory (MB): peak = 2002.293 ; gain = 0.000 ; free physical = 1841 ; free virtual = 37844
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: ca43d5a6
+
+Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.20 . Memory (MB): peak = 2002.293 ; gain = 0.000 ; free physical = 1841 ; free virtual = 37844
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2002.293 ; gain = 0.000 ; free physical = 1841 ; free virtual = 37844
+Ending Logic Optimization Task | Checksum: ca43d5a6
+
+Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.21 . Memory (MB): peak = 2002.293 ; gain = 0.000 ; free physical = 1841 ; free virtual = 37844
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 4 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 8
+Ending PowerOpt Patch Enables Task | Checksum: a9e72201
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2183.438 ; gain = 0.000 ; free physical = 1830 ; free virtual = 37833
+Ending Power Optimization Task | Checksum: a9e72201
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2183.438 ; gain = 181.145 ; free physical = 1835 ; free virtual = 37838
+28 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2183.438 ; gain = 699.727 ; free physical = 1835 ; free virtual = 37838
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint '/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/project.runs/impl_1/hipaccRun_opt.dcp' has been generated.
+Command: report_drc -file hipaccRun_drc_opted.rpt
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/project.runs/impl_1/hipaccRun_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z100-ffg900'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z100-ffg900'
+INFO: [Common 17-1223] The version limit for your license is '2017.12' and will expire in -104 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
+INFO: [DRC 23-27] Running DRC with 8 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+Command: report_drc (run_mandatory_drcs) for: placer_checks
+INFO: [DRC 23-27] Running DRC with 8 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2183.441 ; gain = 0.000 ; free physical = 1817 ; free virtual = 37821
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 59234078
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2183.441 ; gain = 0.000 ; free physical = 1817 ; free virtual = 37821
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2183.441 ; gain = 0.000 ; free physical = 1819 ; free virtual = 37823
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 7783727f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.99 . Memory (MB): peak = 2183.441 ; gain = 0.000 ; free physical = 1808 ; free virtual = 37812
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 15e5caf31
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2189.449 ; gain = 6.008 ; free physical = 1804 ; free virtual = 37808
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 15e5caf31
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2189.449 ; gain = 6.008 ; free physical = 1804 ; free virtual = 37808
+Phase 1 Placer Initialization | Checksum: 15e5caf31
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2189.449 ; gain = 6.008 ; free physical = 1804 ; free virtual = 37808
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1a8a057bb
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 2203.477 ; gain = 20.035 ; free physical = 1745 ; free virtual = 37748
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1a8a057bb
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 2203.477 ; gain = 20.035 ; free physical = 1745 ; free virtual = 37748
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 109b9c087
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 2203.477 ; gain = 20.035 ; free physical = 1740 ; free virtual = 37744
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: f5d2e212
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 2203.477 ; gain = 20.035 ; free physical = 1739 ; free virtual = 37742
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: e714faff
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 2203.477 ; gain = 20.035 ; free physical = 1739 ; free virtual = 37742
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 10147b8c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 2203.477 ; gain = 20.035 ; free physical = 1738 ; free virtual = 37742
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 14f61c88b
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 2203.477 ; gain = 20.035 ; free physical = 1733 ; free virtual = 37737
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 14fdb3031
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 2203.477 ; gain = 20.035 ; free physical = 1733 ; free virtual = 37737
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 14fdb3031
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 2203.477 ; gain = 20.035 ; free physical = 1733 ; free virtual = 37737
+Phase 3 Detail Placement | Checksum: 14fdb3031
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 2203.477 ; gain = 20.035 ; free physical = 1733 ; free virtual = 37737
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 20c0f2a35
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Place 46-41] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 20c0f2a35
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 2203.477 ; gain = 20.035 ; free physical = 1730 ; free virtual = 37734
+INFO: [Place 30-746] Post Placement Timing Summary WNS=1.850. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 16a826194
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 2203.477 ; gain = 20.035 ; free physical = 1731 ; free virtual = 37735
+Phase 4.1 Post Commit Optimization | Checksum: 16a826194
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 2203.477 ; gain = 20.035 ; free physical = 1731 ; free virtual = 37735
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 16a826194
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 2203.477 ; gain = 20.035 ; free physical = 1741 ; free virtual = 37745
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 16a826194
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 2203.477 ; gain = 20.035 ; free physical = 1741 ; free virtual = 37745
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: b23a6c5e
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 2203.477 ; gain = 20.035 ; free physical = 1741 ; free virtual = 37745
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: b23a6c5e
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 2203.477 ; gain = 20.035 ; free physical = 1741 ; free virtual = 37745
+Ending Placer Task | Checksum: 6f2dd809
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 2203.477 ; gain = 20.035 ; free physical = 1805 ; free virtual = 37808
+48 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 2203.477 ; gain = 20.035 ; free physical = 1805 ; free virtual = 37808
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2203.477 ; gain = 0.000 ; free physical = 1801 ; free virtual = 37808
+INFO: [Common 17-1381] The checkpoint '/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/project.runs/impl_1/hipaccRun_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.20 . Memory (MB): peak = 2203.480 ; gain = 0.000 ; free physical = 1784 ; free virtual = 37789
+report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2203.480 ; gain = 0.000 ; free physical = 1801 ; free virtual = 37806
+report_control_sets: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2203.480 ; gain = 0.000 ; free physical = 1802 ; free virtual = 37806
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z100-ffg900'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z100-ffg900'
+INFO: [Common 17-1223] The version limit for your license is '2017.12' and will expire in -104 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.500 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+53 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2203.480 ; gain = 0.000 ; free physical = 1797 ; free virtual = 37805
+INFO: [Common 17-1381] The checkpoint '/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/project.runs/impl_1/hipaccRun_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z100-ffg900'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z100-ffg900'
+INFO: [Common 17-1223] The version limit for your license is '2017.12' and will expire in -104 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command route_design
+Command: report_drc (run_mandatory_drcs) for: router_checks
+INFO: [DRC 23-27] Running DRC with 8 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 58cf3efc ConstDB: 0 ShapeSum: 165e990d RouteDB: 0
+
+Phase 1 Build RT Design
+WARNING: [Route 35-198] Port "ap_rst" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_rst". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "ap_start" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_start". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmOut0_V_full_n" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmOut0_V_full_n". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_empty_n" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_empty_n". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[24]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[24]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[25]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[25]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[26]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[26]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[27]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[27]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[28]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[28]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[29]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[29]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[30]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[30]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[31]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[31]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[20]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[20]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[17]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[17]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[18]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[18]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[22]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[22]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[16]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[16]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[19]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[19]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[21]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[21]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "p_strmIN_V_dout[23]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "p_strmIN_V_dout[23]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+Phase 1 Build RT Design | Checksum: ae647b80
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:53 . Memory (MB): peak = 2378.547 ; gain = 175.066 ; free physical = 1526 ; free virtual = 37532
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: ae647b80
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:53 . Memory (MB): peak = 2378.551 ; gain = 175.070 ; free physical = 1527 ; free virtual = 37533
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: ae647b80
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:53 . Memory (MB): peak = 2421.547 ; gain = 218.066 ; free physical = 1476 ; free virtual = 37482
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: ae647b80
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:53 . Memory (MB): peak = 2421.547 ; gain = 218.066 ; free physical = 1476 ; free virtual = 37482
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 100e4fa0d
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:53 . Memory (MB): peak = 2450.242 ; gain = 246.762 ; free physical = 1480 ; free virtual = 37485
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.756  | TNS=0.000  | WHS=-0.177 | THS=-30.665|
+
+Phase 2 Router Initialization | Checksum: d2e46ee8
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:54 . Memory (MB): peak = 2450.242 ; gain = 246.762 ; free physical = 1473 ; free virtual = 37479
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 2066fd5ba
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:54 . Memory (MB): peak = 2450.242 ; gain = 246.762 ; free physical = 1459 ; free virtual = 37465
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 189
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.756  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: ed947bff
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:55 . Memory (MB): peak = 2450.242 ; gain = 246.762 ; free physical = 1458 ; free virtual = 37464
+Phase 4 Rip-up And Reroute | Checksum: ed947bff
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:55 . Memory (MB): peak = 2450.242 ; gain = 246.762 ; free physical = 1458 ; free virtual = 37464
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: ed947bff
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:55 . Memory (MB): peak = 2450.242 ; gain = 246.762 ; free physical = 1458 ; free virtual = 37464
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: ed947bff
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:55 . Memory (MB): peak = 2450.242 ; gain = 246.762 ; free physical = 1458 ; free virtual = 37464
+Phase 5 Delay and Skew Optimization | Checksum: ed947bff
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:55 . Memory (MB): peak = 2450.242 ; gain = 246.762 ; free physical = 1458 ; free virtual = 37464
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: fabe9110
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:55 . Memory (MB): peak = 2450.242 ; gain = 246.762 ; free physical = 1457 ; free virtual = 37462
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.850  | TNS=0.000  | WHS=0.049  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1a62bb03b
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:55 . Memory (MB): peak = 2450.242 ; gain = 246.762 ; free physical = 1457 ; free virtual = 37462
+Phase 6 Post Hold Fix | Checksum: 1a62bb03b
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:55 . Memory (MB): peak = 2450.242 ; gain = 246.762 ; free physical = 1457 ; free virtual = 37462
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0904377 %
+  Global Horizontal Routing Utilization  = 0.119025 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 11a7f60a3
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:55 . Memory (MB): peak = 2450.242 ; gain = 246.762 ; free physical = 1455 ; free virtual = 37461
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 11a7f60a3
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:55 . Memory (MB): peak = 2450.242 ; gain = 246.762 ; free physical = 1455 ; free virtual = 37461
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: c37573c1
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:55 . Memory (MB): peak = 2450.242 ; gain = 246.762 ; free physical = 1456 ; free virtual = 37462
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=1.850  | TNS=0.000  | WHS=0.049  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: c37573c1
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:55 . Memory (MB): peak = 2450.242 ; gain = 246.762 ; free physical = 1459 ; free virtual = 37465
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:55 . Memory (MB): peak = 2450.242 ; gain = 246.762 ; free physical = 1523 ; free virtual = 37528
+
+Routing Is Done.
+66 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:18 ; elapsed = 00:00:56 . Memory (MB): peak = 2450.242 ; gain = 246.762 ; free physical = 1523 ; free virtual = 37528
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.30 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2450.242 ; gain = 0.000 ; free physical = 1519 ; free virtual = 37529
+INFO: [Common 17-1381] The checkpoint '/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/project.runs/impl_1/hipaccRun_routed.dcp' has been generated.
+Command: report_drc -file hipaccRun_drc_routed.rpt -pb hipaccRun_drc_routed.pb -rpx hipaccRun_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/project.runs/impl_1/hipaccRun_drc_routed.rpt.
+report_drc completed successfully
+Command: report_methodology -file hipaccRun_methodology_drc_routed.rpt -rpx hipaccRun_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/project.runs/impl_1/hipaccRun_methodology_drc_routed.rpt.
+report_methodology completed successfully
+Command: report_power -file hipaccRun_power_routed.rpt -pb hipaccRun_power_summary_routed.pb -rpx hipaccRun_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+73 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 14 20:21:58 2018...
+[Sat Apr 14 20:22:01 2018] impl_1 finished
+wait_on_run: Time (s): cpu = 00:00:00.10 ; elapsed = 00:01:37 . Memory (MB): peak = 2038.078 ; gain = 7.996 ; free physical = 2797 ; free virtual = 38805
+INFO: [Netlist 29-17] Analyzing 109 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'hipaccRun' is not ideal for floorplanning, since the cellview 'process_r' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/.Xil/Vivado-4207-codesign89/dcp4/hipaccRun.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/hipaccRun.xdc:2]
+Finished Parsing XDC File [/scratch-local/action/saarland/temp_repos/hipacc_generated_codes/vivado_gen/gauss_1020_int_nobh_v1/hipacc_project/solution1/impl/verilog/.Xil/Vivado-4207-codesign89/dcp4/hipaccRun.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2137.844 ; gain = 2.000 ; free physical = 2681 ; free virtual = 38694
+Restored from archive | CPU: 0.090000 secs | Memory: 2.646278 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2137.844 ; gain = 2.000 ; free physical = 2681 ; free virtual = 38694
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2248.863 ; gain = 0.000 ; free physical = 2651 ; free virtual = 38659
+
+
+Implementation tool: Xilinx Vivado v.2017.2
+Project:             hipacc_project
+Solution:            solution1
+Device target:       xc7z100ffg900-1
+Report date:         Sat Apr 14 20:22:03 CEST 2018
+
+#=== Post-Implementation Resource usage ===
+SLICE:          359
+LUT:            752
+FF:            1538
+DSP:             12
+BRAM:             8
+SRL:             17
+#=== Final timing ===
+CP required:    6.660
+CP achieved post-synthesis:    4.870
+CP achieved post-implementation:    4.810
+Timing met
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 14 20:22:03 2018...
+INFO: [HLS 200-112] Total elapsed time: 235.62 seconds; peak allocated memory: 782.987 MB.

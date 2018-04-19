@@ -260,3 +260,4 @@ hipaccReadMemory(_strmOut0, host_out, OUT);
     hipaccReleaseMemory(OUT);
     hipaccReleaseMemory(IN);
     return EXIT_SUCCESS;
+};

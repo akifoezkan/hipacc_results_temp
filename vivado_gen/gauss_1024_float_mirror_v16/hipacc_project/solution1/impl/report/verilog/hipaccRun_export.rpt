@@ -1,0 +1,20 @@
+
+
+Implementation tool: Xilinx Vivado v.2017.2
+Project:             hipacc_project
+Solution:            solution1
+Device target:       xc7z100ffg900-1
+Report date:         Sat Apr 14 22:02:05 CEST 2018
+
+#=== Post-Implementation Resource usage ===
+SLICE:        45536
+LUT:         122913
+FF:          178090
+DSP:           1610
+BRAM:            60
+SRL:          17331
+#=== Final timing ===
+CP required:    6.660
+CP achieved post-synthesis:    5.838
+CP achieved post-implementation:    6.443
+Timing met

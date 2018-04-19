@@ -1,0 +1,31 @@
+\begin{table}[t]                                                    
+  \centering                                                        
+  \caption{Implementation results for Vivado HLS}                                                
+  \vspace{1ex}                                                      
+  \scalebox{.76}{                                                
+     \begin{tabular}{lrrrrrrr}                                   
+         \toprule                                                   
+& \multicolumn{6}{c}{vivado gen}\\ 
+\midrule
+App.                         &   BRAM &    SLICE &   LUT &    FF &  DSP &  SRL  &  Aclk & WorstcaseLatency\\
+\midrule
+gauss 1020 int nobh v1       &      8 &      359 &   752 &  1538 &   12 &   17  &  4.81 &   1044496.00\\
+gauss 1020 int nobh v16      &     60 &     5440 & 10370 & 17675 &  192 &  897  &  6.07 &     66443.00\\
+gauss 1020 int nobh v4       &     16 &     1319 &  2616 &  5148 &   48 &  130  &  5.33 &    261646.00\\
+gauss 1024 float mirror v1   &      8 &     4401 & 11242 & 13342 &  125 & 2709  &  6.32 &   1052887.00\\
+gauss 1024 float mirror v16  &     60 &    45536 & 122913 & 178090 & 1610 & 17331  &  6.44 &     66906.00\\
+gauss 1024 float mirror v4   &     16 &    14202 & 35054 & 49936 &  470 & 5961  &  6.40 &    263895.00\\
+gauss 1024 float nobh v16    &     60 &    42583 & 109128 & 165024 & 1610 & 8011  &  6.42 &     66899.00\\
+gauss 1024 float nobh v4     &     16 &    13011 & 28676 & 46034 &  470 & 1833  &  6.22 &    263891.00\\
+gauss 1024 int clamp v1      &      8 &      726 &  1893 &  2700 &   12 &   17  &  5.87 &   1052689.00\\
+gauss 1024 int mirror v1     &      8 &      963 &  2444 &  3562 &   12 &   17  &  5.97 &   1052690.00\\
+gauss 1024 int mirror v16    &     60 &     7082 & 14072 & 28693 &  192 &  267  &  6.41 &     66709.00\\
+gauss 1024 int mirror v4     &     16 &     2230 &  4901 &  9811 &   48 &   33  &  5.96 &    263698.00\\
+gauss 1024 int nobh v1       &      8 &      375 &   774 &  1551 &   12 &   17  &  4.81 &   1052688.00\\
+gauss 1024 int nobh v16      &     60 &     5313 & 10403 & 17685 &  192 &  897  &  6.19 &     66703.00\\
+gauss 1024 int nobh v4       &     16 &     1222 &  2615 &  5213 &   48 &  129  &  5.14 &    263695.00\\
+         \bottomrule      
+     \end{tabular}      
+  }                   
+  \label{tab:results_hls}     
+\end{table}          
