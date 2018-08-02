@@ -87,7 +87,7 @@ struct ccGaussianFilterGKernelKernel {
             _tmp0 += 729 * getWindowAt(Input, 4, 4);
         }
         sum = _tmp0;
-        return sum >> 16;
+        return sum / 52441;
     }
 }
 };
