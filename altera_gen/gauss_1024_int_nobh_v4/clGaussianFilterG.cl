@@ -82,7 +82,7 @@ int clGaussianFilterGKernelKernel(int Input[5][5]) {
             _tmp0 += 729 * getWindowAt(Input, 4, 4);
         }
         sum = _tmp0;
-        return sum;
+        return sum / 52441;
     }
 }
 
